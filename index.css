@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@font-face {
+ font-family: 'Continuum';
+ src: url(fonts/contm.ttf) format('ttf');
+}
 
 body {
     background-color: black;
@@ -6,10 +10,10 @@ body {
 
 h1 {
     color: white;
-    font-family: "Patrick Hand";
+    font-family: "Continuum";
 }
 
 p {
     color: white;
-    font-family: "Patrick Hand";
+    font-family: "Continuum";
 }
