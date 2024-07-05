@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 body {
-    background-color: lightgreen;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: "Patrick Hand";
+}
+
+p {
+    color: white;
+    font-family: "Patrick Hand";
 }
