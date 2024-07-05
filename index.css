@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @font-face {
- font-family: 'Continuum';
- src: url(fonts/contm.ttf) format('ttf');
+ font-family: 'ContM';
+ src: url(fonts/contm.ttf) format('truetype');
 }
 
 body {
@@ -10,10 +10,10 @@ body {
 
 h1 {
     color: white;
-    font-family: "Continuum";
+    font-family: "ContM";
 }
 
 p {
     color: white;
-    font-family: "Continuum";
+    font-family: "ContM";
 }
