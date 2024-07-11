@@ -1,19 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @font-face {
- font-family: 'ContM';
- src: url('fonts/contm.ttf') format('truetype');
+	font-family: 'ContL';
+	src: url('fonts/contl.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ContM';
+	src: url('fonts/contm.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ContB';
+	src: url('fonts/contb.ttf') format('truetype');
+}
+
+#mainTitle {
+	position: absolute;
+	left: 5vw;
+	font-size: 10vw;
+	z-index: 2;
+}
+
+#section-1{
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: left;
+	width: 100%;
+	height: 50vw;
+}
+
+#section-1 > #img-background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 body {
-    background-color: black;
+	margin: 0;
 }
 
 h1 {
-    color: white;
-    font-family: "ContM";
+    font-family: "ContB";
+}
+
+h2 {
+	font-family: "ContB";
+	font-size: 40px;
+	margin: 20px;
 }
 
 p {
-    color: white;
+	margin: 8px;
     font-family: "Patrick Hand";
+	font-size: 25px;
 }
