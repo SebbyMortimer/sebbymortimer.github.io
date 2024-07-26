@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
 	const audio = document.getElementById('background-music');
 	audio.volume = 0.5;
 
@@ -17,4 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Add event listeners for user interaction
 	document.addEventListener('click', playMusic);
 	document.addEventListener('keydown', playMusic);
-});
+}); */
+
+function playAudio(img) {
+	const audio = document.getElementById('background-music');
+	const source = document.getElementById('music-source');
+	
+	source.src = "../audio/".concat(img.src.replace(/^.*[\\\/]/, '').replace("jpg", "mp3"));
+	audio.load();
+	audio.play();
+}
