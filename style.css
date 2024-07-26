@@ -25,11 +25,12 @@
 
 #titleParagraph {
 	position: absolute;
-	left: 5vw;
+	left: 5.4vw;
 	top: 32vw;
 	font-size: 2.5vw;
 	font-family: 'Patrick Hand';
 	z-index: 2;
+	margin: 0;
 }
 
 #section-1{
@@ -57,10 +58,50 @@
 	font-size: 25px;
 }
 
+.otherTitle {
+	margin: 16px;
+	font-size: 50px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1vh 3vw;
+  grid-template-columns: auto auto auto;
+  background-color: #e68d50;
+  margin: 25px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Patrick Hand";
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media all and (max-width: 600px) {
+	.grid-container {
+		grid-template-columns: auto;
+	}
+}
+
 /* Customised tags */
 
 body {
 	margin: 0;
+	display: grid;
 }
 
 h1 {
