@@ -27,7 +27,7 @@
 	position: absolute;
 	left: 5.4vw;
 	top: 32vw;
-	font-size: 2.5vw;
+	font-size: 3vw;
 	font-family: 'Patrick Hand';
 	z-index: 2;
 	margin: 0;
@@ -54,7 +54,7 @@
 
 .paragraph {
 	margin: 8px;
-    font-family: "Patrick Hand";
+	font-family: "Patrick Hand";
 	font-size: 25px;
 }
 
@@ -64,31 +64,69 @@
 }
 
 .grid-container {
-  display: grid;
-  gap: 1vh 3vw;
-  grid-template-columns: auto auto auto;
-  background-color: #e68d50;
-  margin: 25px;
+	display: grid;
+	gap: 1vh 3vw;
+	grid-template-columns: auto auto auto;
+	background-color: #e68d50;
+	margin: 25px;
+}
+
+.pageOffset {
+	margin-top: 96px;
+	padding-top: 20px;
 }
 
 .navbar {
-  display: flex;
-  background-color: #333;
+	display: flex;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar p {
+	font-family: "Patrick Hand";
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	width: 192px;
+	height: 96px;
+	margin: 0;
 }
 
 /* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-  font-family: "Patrick Hand";
-}
+/* .navbar a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Patrick Hand";
+} */
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+	/* make hover cog image visible */
+}
+
+.cog {
+	margin-top: -96px;
+}
+
+.rotating {
+	animation: rotate 5s linear infinite;
+}
+
+.rotating-reverse {
+	animation: rotate 5s linear -0.3s infinite reverse;
+}
+
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
 }
 
 @media all and (max-width: 600px) {
@@ -97,15 +135,34 @@
 	}
 }
 
+@media all and (max-width: 960px) {
+	.cog {
+		margin-top: -10%;
+		width: 20%;
+	}
+	.pageOffset {
+		margin-top: 10%;
+	}
+	.navbar a {
+		width: 20%;
+	}
+	.navbar p {
+		font-size: 3vw;
+		width: auto;
+		height: 10vw;
+	}
+}
+
 /* Customised tags */
 
 body {
+	background-color: #ffe0ca;
 	margin: 0;
 	display: grid;
 }
 
 h1 {
-    font-family: "ContB";
+	font-family: "ContB";
 }
 
 h2 {
