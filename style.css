@@ -155,7 +155,7 @@
 body {
 	margin: 0;
 	display: grid;
-	background-color: #ffe0ca; /* for backup */
+	background-color: #e68d50; /* for backup */
 	background-image: url("images/SteampunkAirship.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
