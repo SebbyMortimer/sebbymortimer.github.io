@@ -155,12 +155,22 @@
 body {
 	margin: 0;
 	display: grid;
-	background-color: #e68d50; /* for backup */
-	background-image: url("images/SteampunkAirship.gif");
+	background-color: #e68d50;
+}
+
+body::after{
+	content: "";
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url("images/SteampunkAirship.gif") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 }
 
 h1 {
