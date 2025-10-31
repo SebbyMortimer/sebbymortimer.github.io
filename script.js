@@ -17,7 +17,7 @@ function checkSeasonal() {
             tag.style.textShadow = "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000";
         });
         document.querySelectorAll('p, ul').forEach(tag => {
-            tag.style.color = "#af6034";
+            tag.style.color = "#f48e55";
         });
         document.querySelectorAll('main, .textBackground').forEach(tag => {
             tag.style.backgroundColor = "#160025";
