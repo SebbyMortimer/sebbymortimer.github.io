@@ -15,6 +15,11 @@
 	src: url('fonts/contb.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'MonsterMash';
+    src: url('fonts/CC Monster Mash Medium.ttf') format('truetype');
+}
+
 /* ID's */
 #mainTitle {
 	position: absolute;
@@ -156,6 +161,7 @@ body {
 	margin: 0;
 	display: grid;
 	background-color: #e68d50;
+    --bg-image: url("images/SteampunkAirship.gif"); /* bg image variable for body::after so javascript can change it */
 }
 
 body::after{
@@ -166,7 +172,7 @@ body::after{
 	left: 0;
 	right: 0;
 	z-index: -1;
-	background: url("images/SteampunkAirship.gif") center center;
+    background: var(--bg-image) center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
